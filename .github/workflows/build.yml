@@ -4,7 +4,14 @@ on:
   push:
     branches:
       - main
- 
+      - stem1
+    branches-ignore:
+      - "stem1*"
+    paths:
+       - "src/**"
+       - "dependencies.txt"
+  schedule:
+     - cron: "45 1 * * *"
 jobs:
   build:
     runs-on: ubuntu-latest
