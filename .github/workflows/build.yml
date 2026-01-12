@@ -11,7 +11,7 @@ on:
        - "src/**"
        - "dependencies.txt"
   schedule:
-     - cron: "08 9 * * *"
+     - cron: "08 1 * * *"
      
 # Trigger when issue events occur
   issues:
