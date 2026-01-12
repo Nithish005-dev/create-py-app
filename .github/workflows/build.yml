@@ -12,6 +12,12 @@ on:
        - "dependencies.txt"
   schedule:
      - cron: "08 9 * * *"
+     
+# Trigger when issue events occur
+  issues:
+    types:
+      - opened
+
 jobs:
   build:
     runs-on: ubuntu-latest
